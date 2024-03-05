@@ -3,13 +3,10 @@ public class Doctor {
     String name;
     String speciality;
     //Comportamientos
-    Doctor() {
-        System.out.println("Construyendo el objeto Doctor");
-        id++;
-    }
-    Doctor(String name) {
+    Doctor(String name, String speciality) {
         id++;
         this.name = name;
+        this.speciality = speciality;
     }
     public void showName() {
         System.out.println(name);
